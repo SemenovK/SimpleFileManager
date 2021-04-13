@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/fileManagerMainWindow.fxml"));
         primaryStage.setTitle("Simple File Manager [KSemenov.com production]");
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setScene(new Scene(root, 1200, 600));
         primaryStage.show();
     }
 

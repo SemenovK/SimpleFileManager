@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.ksemenov.simplefilemanager.gui.fileManagerPanelController"
+      prefWidth="600.0">
+    <HBox spacing="5">
+        <ComboBox fx:id="disksBox" onAction="#onDiskBoxAction"/>
+        <TextField fx:id="currentPath" HBox.hgrow="ALWAYS"/>
+        <Button text="Go" onAction="#onGoPathClick"/>
+        <Button text="Up" onAction="#onPathUpClick"/>
+        <padding>
+            <Insets top="5" bottom="10" left="5" right="5"/>
+        </padding>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <TableView fx:id="filesTable" HBox.hgrow="ALWAYS" onMouseClicked="#onFilesTableClick">
+
+        </TableView>
+    </HBox>
+</VBox>
