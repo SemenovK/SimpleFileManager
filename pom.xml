@@ -7,6 +7,7 @@
     <groupId>com.ksemenov</groupId>
     <artifactId>SimpleFileManager</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <url>ksemenov.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,21 +17,6 @@
 
     
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <version>3.3.0</version>
-        </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -42,11 +28,10 @@
             <artifactId>javafx-controls</artifactId>
             <version>17-ea+6</version>
         </dependency>
-
     </dependencies>
+
     <build>
     <plugins>
-
         <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
             <configuration>
@@ -58,6 +43,7 @@
                 <descriptorRefs>
                     <descriptorRef>jar-with-dependencies</descriptorRef>
                 </descriptorRefs>
+                <finalName>SimpleFileManager</finalName>
             </configuration>
             <executions>
                 <execution>
